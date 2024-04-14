@@ -1,0 +1,105 @@
+// 需要自定义覆盖的样式
+body.dark {
+	background-color: var(--main-bg-color);
+	color: var(--text-color);
+	#driver-highlighted-element-stage {
+		background-color: #525457;
+	}
+}
+
+.dark {
+	/* login container 登录样式 */
+	.login-container {
+		background-color: var(--main-bg-color) !important;
+		.login-box {
+			background-color: rgba(0, 0, 0, 0.8) !important;
+			.login-form {
+				background-color: var(--main-bg-color) !important;
+				box-shadow: var(--shadow-color) !important;
+				.login-logo {
+					.logo-text {
+						color: var(--text-color) !important;
+					}
+				}
+				.login-btn {
+					.ant-btn-default {
+						color: var(--text-color) !important;
+					}
+				}
+			}
+		}
+	}
+
+	// container
+	.container {
+		// sider
+		.ant-layout-sider {
+			border-right: 1px solid var(--border-color) !important;
+			background: var(--bg-color);
+			.ant-menu {
+				background: var(--bg-color);
+				&::-webkit-scrollbar {
+					background-color: var(--bg-color) !important;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: var(--scrollbar-bg-color) !important;
+				}
+			}
+			.logo-box {
+				border-bottom: 1px solid var(--border-color) !important;
+			}
+		}
+
+		// layout
+		.ant-layout {
+			background-color: var(--main-bg-color) !important;
+
+			// 通用
+			.ant-layout-header,
+			.tabs,
+			.footer,
+			.card {
+				background-color: var(--bg-color) !important;
+				border-color: var(--border-color) !important;
+				.text {
+					color: var(--text-color) !important;
+				}
+			}
+
+			// 头部
+			.ant-layout-header {
+				.icon-style,
+				.username {
+					color: var(--text-color) !important;
+				}
+			}
+
+			// 底部
+			.ant-layout-footer {
+				background-color: var(--bg-color) !important;
+				border-color: var(--border-color) !important;
+				a {
+					color: var(--text-color) !important;
+				}
+			}
+
+			// 内容
+			.ant-layout-content {
+				&::-webkit-scrollbar {
+					background-color: var(--main-bg-color) !important;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: var(--scrollbar-bg-color) !important;
+				}
+				.card {
+					&::-webkit-scrollbar {
+						background-color: var(--bg-color) !important;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--scrollbar-bg-color) !important;
+					}
+				}
+			}
+		}
+	}
+}
